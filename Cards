@@ -19,7 +19,7 @@ public class PlayingCard {
 		int n = SUITS_LIST.length * RANK_LIST.length; //общее количество карт//
  
  
-																																			//Вводим с консоли//
+	//Вводим с консоли//
 		for(;;){
 			Scanner sc = new Scanner(System.in);
 			System.out.println("Введите количество игроков в партии: ");   
@@ -52,7 +52,7 @@ public class PlayingCard {
 		}
  
  
-																																					//инициализируем колоду//
+			//инициализируем колоду//
 		String[] deck = new String[n];
 		for (int i = 0; i < RANK_LIST.length; i++) {
 			for (int j = 0; j < SUITS_LIST.length; j++) {
@@ -60,7 +60,7 @@ public class PlayingCard {
 			}
 		}
  
-																																				//перетасовываем колоду//
+				//перетасовываем колоду//
 		for (int i = 0; i < n; i++) {
 			int r = i + (int) (Math.random() * (n-i)); //рандомная карта//
 			String temp = deck[r];
@@ -68,7 +68,7 @@ public class PlayingCard {
 			deck[i] = temp;
 		}
  
-																																				//Результат работы на экране//
+			//Результат работы на экране//
 		for (int i = 0; i < players * cardsPerPlayer; i++) {
 			System.out.println(deck[i]);
 			if (i % cardsPerPlayer == cardsPerPlayer - 1)
