@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class PlayingCard {
  
 	public static void main(String[] args) {
- 																																		//инициализируем переменные//
+ 					//инициализируем переменные//
 		int cardsPerPlayer = 5; //кол-во карт для одного игрока//
 		int players = 0 ;       
  
